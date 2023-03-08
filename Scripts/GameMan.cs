@@ -15,25 +15,17 @@ public class GameMan : MonoBehaviour
     {
         instance = this;
     }
-    void Start()
-    {
-        
-    }
     public void select(int i)
     {
         if(flag == true)
         {
-            T[i].text ="O";
-           
+            T[i].text ="O";   
         }
         else 
         {
-            T[i].text="X";
-            
+            T[i].text="X";       
         }
     }
-    
-    
     public void Check()
     {
         if((T[0].text == T[1].text && T[0].text == T[2].text)||(T[0].text == T[3].text && T[0].text == T[6].text)||(T[0].text == T[4].text && T[0].text == T[8].text))
@@ -68,10 +60,8 @@ public class GameMan : MonoBehaviour
             AnimiMan.instance.DropDrawPanel();
         }
     }
-    
     public void Change()
     {
         flag = !flag;
-    }
-    
+    } 
 }
