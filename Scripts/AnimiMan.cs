@@ -15,16 +15,6 @@ public class AnimiMan : MonoBehaviour
     {
         instance = this;
     }
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Fade()
     {
         canvasgroup.DOFade(0,2);    
@@ -32,7 +22,6 @@ public class AnimiMan : MonoBehaviour
     public void DropDrawPanel()
     {
         DrawPanel.DOAnchorPos(new Vector2(0,-39),0.5f,false);
-        AudioMan.Instance.DrawSound();
     }
     public void Pop(int popcount)
     {
